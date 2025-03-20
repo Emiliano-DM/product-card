@@ -30,6 +30,10 @@ img {
 }
 
 
+#tag {
+  text-transform: uppercase;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
