@@ -24,7 +24,7 @@ main {
   border-radius: 0.5rem;
 }
 
-img {
+#product-img {
   max-inline-size: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -35,10 +35,11 @@ img {
 
 #tag {
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 h1 {
-  margin: 0.5rem 0.1rem;
+  line-height: 1.7rem;
 }
 
 #price-box {
@@ -48,15 +49,11 @@ h1 {
 
 #discount {
   color: hsl(158, 36%, 37%);
-  font-size: clamp(1rem, 2rem + 1vw,5rem);
-  font-weight: 700;
 }
 
 #original {
   align-content: center;
   text-decoration: line-through;
-  font-weight: 500;
-  font-size: (0.5rem, 0.9rem + 1wv, 1.5rem);
 }
 
 
@@ -64,19 +61,43 @@ button {
   color: white;
   background-color: hsl(158, 36%, 37%);
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   text-align: center;
-  font-weight: 600;
   border-radius: 0.5rem;
   border: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2%;
 }
 
 
-.fs-1r{
-  font-size: clamp(0.3rem, 0.6rem + 1vw, 1.5rem);
+#cart-icon {
+  width: 5%;
+}
+
+.mb-big {
+  margin-bottom: 0.8rem;
+}
+
+.mb-small {
+  margin-bottom: 0.5rem;
+}
+
+.fw-big{
+  font-weight: 700;
+}
+
+.fw-small {
+  font-weight: 500;
+}
+
+.fs-big {
+  font-size: clamp(1rem, 1.6rem + 1vw, 5rem);
+}
+
+.fs-small{
+  font-size: clamp(0.3rem, 0.5rem + 1vw, 1.5rem);
 }
 
 .lightgray-text {
