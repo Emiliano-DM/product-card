@@ -21,12 +21,13 @@ main {
 #card-container {
   width: 300px;
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 #product-img {
   max-inline-size: 100%;
-  border-radius: 0.5rem 0.5rem 0 0;
+  block-size: auto;
+  border-radius: 0.6rem 0.6rem 0 0;
 }
 
 #card-text {
@@ -39,7 +40,8 @@ main {
 }
 
 h1 {
-  line-height: 1.7rem;
+  line-height: clamp(1rem, 1.6rem + 1vw, 3rem);
+  color: hsl(212, 21%, 14%);
 }
 
 #price-box {
@@ -71,6 +73,10 @@ button {
   gap: 2%;
 }
 
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
 
 #cart-icon {
   width: 5%;
@@ -93,11 +99,11 @@ button {
 }
 
 .fs-big {
-  font-size: clamp(1rem, 1.6rem + 1vw, 5rem);
+  font-size: clamp(1rem, 1.6rem + 1vw, 3rem);
 }
 
 .fs-small{
-  font-size: clamp(0.3rem, 0.5rem + 1vw, 1.5rem);
+  font-size: clamp(0.3rem, 0.5rem + 1vw, 0.9rem);
 }
 
 .lightgray-text {
@@ -120,3 +126,6 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+

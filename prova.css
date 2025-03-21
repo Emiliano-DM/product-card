@@ -1,0 +1,16 @@
+div {
+  width: 300px;
+}
+
+div::before {
+  content: url(images/image-product-mobile.jpg);
+  width: 100%;
+}
+
+@media (min-width:700px) {
+  div::before{
+    content: url(images/image-product-desktop.jpg);
+    width: 50%;
+  }
+
+}
