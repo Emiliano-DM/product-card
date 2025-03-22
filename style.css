@@ -26,7 +26,10 @@ main {
 
 #product-img {
   max-inline-size: 100%;
-  block-size: auto;
+  width: 100%;
+  aspect-ratio: 667/375;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: 100% 100%;
   border-radius: 0.6rem 0.6rem 0 0;
 }
 
@@ -129,3 +132,31 @@ button:hover {
 
 
 
+
+@media (min-width:475px) {
+  #card-container {
+    display: flex;
+    width: 600px;
+  }
+
+  #product-img{
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: 100% 100%;
+    width: 50%;
+    aspect-ratio: 1440 / 800;
+    border-radius: 0.6rem 0 0 0.6rem ;
+  }
+
+  #card-text {
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .mb-big {
+    margin-bottom: 1.7rem;
+  }
+
+  .mb-small {
+    margin-bottom: 1.5rem;
+  }
+}
